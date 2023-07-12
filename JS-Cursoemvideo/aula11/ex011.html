@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Aula 11</title>
+</head>
+<body>
+    <!-- 
+
+var pais = 'Brasil'
+console.log(`Vivendo em ${pais}`)
+if (pais == 'Brasil') {
+    console.log('Você é brasileiro!')
+} else {
+    console.log('Você é estrangeiro')
+}
+     --> 
+
+     <h1>Exercicio da aula 11</h1>
+
+
+     Em qual país você nasceu? <input type="txt" name="txt" id="txt">
+     <input type="button" value="verificar" onclick="nacionalidade()">
+     <div id="res">Sua nacionalidade: </div>
+
+     <script>
+        function nacionalidade(){
+            var pais = document.getElementById('txt')
+            var res = document.getElementById('res')
+            var nac = pais.value
+            
+            if (nac == 'Brasil' || nac == 'brasil'){
+                res.innerHTML = `<p>Você é <strong>brasileiro!</strong></p>`
+            }else {
+                res.innerHTML = `Você é <strong>gringo!</strong>`
+            }
+        }
+     </script>
+</body>
+</html>
